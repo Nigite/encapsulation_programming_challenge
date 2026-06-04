@@ -1,5 +1,4 @@
 class Fan:
-    # Constants for fan speeds
     SLOW = 1
     MEDIUM = 2
     FAST = 3
@@ -38,21 +37,18 @@ class Fan:
         self.__on = on
 
 def test_fan():
-    # First Fan object
     fan1 = Fan()
     fan1.set_speed(Fan.FAST)
     fan1.set_radius(10)
     fan1.set_color("yellow")
     fan1.set_on(True)
 
-    # Second Fan object
     fan2 = Fan()
     fan2.set_speed(Fan.MEDIUM)
     fan2.set_radius(5)
     fan2.set_color("blue")
     fan2.set_on(False)
-
-    # Display properties
+    
     print("--- Fan 1 Properties ---")
     print(f"Speed: {fan1.get_speed()}")
     print(f"Radius: {fan1.get_radius()}")
